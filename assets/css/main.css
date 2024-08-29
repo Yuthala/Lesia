@@ -14,7 +14,27 @@ body {
 	min-width: 300px;
 	background-color: var(--bg-color);
 	color: var(--text-color);
+	font-size: .9em;
 }
+
+a {
+	color: var(--text-color);
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.btn, .dropdown-menu {
+	border-radius: 0;
+}
+/*======General========*/
 
 .wrapper {
 	min-height: 100%;
@@ -26,15 +46,34 @@ main.main {
 	flex: 1 1 auto;
 }
 
-/*======General========*/
-
 /*======Header========*/
 
-		/*===social icons====*/
+		/*===header top====*/
+.header-top-phone {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.header-top .btn {
+	background-color: #fff;
+}
+
+.header-top-phone a {
+	text-decoration: none;
+}
+
+.header-top-phone:hover {
+	text-decoration: underline;
+}
+
+
 ul.social-icons {
 	list-style: none;
 	display: flex;
 	justify-content: center;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 ul.social-icons li {
@@ -44,8 +83,8 @@ ul.social-icons li {
 ul.social-icons a {
 	color: var(--contrast-color);
 	background-color: var(--accent-color);
-	width: 30px;
-	height: 30px;
+	width: 31px;
+	height: 31px;
 	float: left;
 	border-radius: 50%;
 	text-align: center;
@@ -62,4 +101,10 @@ ul.social-icons a:hover {
 	display: flex;
 	justify-content: end;
 }
-/*======General========*/
+
+		/*===header-middle===*/
+.header-middle {
+	background-color: #fff;
+	padding: 20px auto;
+}
+/*==============*/
