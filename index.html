@@ -75,11 +75,11 @@
 				<div class="container-fluid">
 					<div class="row align-items-center">
 						<!--Header logo-->
-						<div class="col-6 col-md-4">
+						<div class="col-sm-6 col-lg-4">
 							<a href="index.html" class="header-logo h3">E-Shop</a>
 						</div>
 						<!--Cart-->
-						<div class="col-6 col-md-4 order-md-2 cart-buttons text-end">
+						<div class="col-lg-4 order-md-2 cart-buttons text-end d-none d-lg-block">
 							<a href="#" class="btn p-1">
 								<i class="fa-solid fa-heart"></i>
 								<span class="badge rounded-pill text-bg-warning cart-badge bg-warning rounded-circle">3</span>
@@ -89,32 +89,10 @@
 								<i class="fa-solid fa-cart-shopping"></i>
 								<span class="badge rounded-pill text-bg-warning cart-badge bg-warning rounded-circle">5</span>
 							</button>
-							<!--offcanvas-->
-							  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
-								<div class="offcanvas-header">
-								  <h5 class="offcanvas-title" id="offcanvasCartLabel">Offcanvas</h5>
-								  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-								</div>
-								<div class="offcanvas-body">
-								  <div>
-									Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-								  </div>
-								  <div class="dropdown mt-3">
-									<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-									  Dropdown button
-									</button>
-									<ul class="dropdown-menu">
-									  <li><a class="dropdown-item" href="#">Action</a></li>
-									  <li><a class="dropdown-item" href="#">Another action</a></li>
-									  <li><a class="dropdown-item" href="#">Something else here</a></li>
-									</ul>
-								  </div>
-								</div>
-							  </div>
 						</div>
 
 						<!-- Search form-->
-						<div class="col-md-4 order-md-1 mt-2 mt-md-0">
+						<div class="col-lg-4 col-sm-6 order-md-1 mt-2 mt-md-0">
 							<form action="">
 								<div class="input-group">
 									<input type="text" class="form-control" name="search" placeholder="Searching..." aria-label="Searching..." aria-describedby="button-search">
@@ -127,6 +105,29 @@
 					</div>
 				</div>
 			</div>
+
+				<!--offcanvas cart-->
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasCartLabel">Cart</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<div>
+						Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+						</div>
+						<div class="dropdown mt-3">
+						<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+							Dropdown button
+						</button>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
 		</header>
 		<!--Header Bottom-->
 		<div class="header-bottom sticky-top">
@@ -164,11 +165,24 @@
 							<li class="nav-item">
 								<a class="nav-link disabled">Disabled</a>
 							</li>
-							</ul>
+						</ul>
+						</div>
 					</div>
+
+					<!--Cart in Header-bottom for lg-->
+					<div class="d-block d-lg-none">
+						<a href="#" class="btn p-1">
+							<i class="fa-solid fa-heart"></i>
+							<span class="badge rounded-pill text-bg-warning cart-badge bg-warning rounded-circle">3</span>
+						</a>
+	
+						<button class="btn p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" area-controls="offcanvasCart">
+							<i class="fa-solid fa-cart-shopping"></i>
+							<span class="badge rounded-pill text-bg-warning cart-badge bg-warning rounded-circle">5</span>
+						</button>
 					</div>
 				</div>
-				</nav>
+			</nav>
 		</div>
 
 		<main class="main">

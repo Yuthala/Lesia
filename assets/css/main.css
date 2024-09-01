@@ -74,6 +74,9 @@ img {
 	color: var(--contrast-color);
 }
 
+.fa-heart, .fa-cart-shopping {
+	color: var(--gray-color);
+}
 /*======Header========*/
 
 		/*===header top====*/
