@@ -224,6 +224,18 @@ ul.social-icons a:hover {
 	animation-name: slideIn;
 }
 
+/*========Main===========*/
+		/*====Carousel===*/
+.carousel-caption {
+	text-shadow: 0 0 4px rgba(0, 0, 0, 1);
+}
+
+.carousel-caption p {
+	font-size: 1.5rem;
+}
+
+/*========Media==========*/
+
 @media only screen and (max-width: 992px) {
 	.header-bottom .navbar .dropdown-menu {
 		padding-left: 1rem;
