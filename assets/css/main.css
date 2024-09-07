@@ -210,6 +210,12 @@ ul.social-icons a:hover {
 .header-bottom .navbar .dropdown-menu {
 	margin-top: 7px;
 }
+
+/*уменьшение padding при скролле >135px*/
+.headernav-scroll.header-bottom .navbar .offcanvas:not(.show) .nav-link {
+	padding-top: .3rem;
+	padding-bottom: .3rem;
+}
 /*======Media========*/
 @media only screen and (min-width: 992px) {
 	.header-bottom .navbar .dropdown-menu-end {
@@ -264,11 +270,7 @@ ul.social-icons a:hover {
 
 		/*====Advantages===*/
 
-.advantages .items {
-	margin-top: 50px;
-}
-
-.advantages .items .item {
+.advantages .item {
 	background-color: #fff;
 	text-align: center;
 	padding: 1rem;
@@ -278,18 +280,28 @@ ul.social-icons a:hover {
 	transition: all .3s;
 }
 
-.advantages .items .item:hover {
+.advantages .item:hover {
 	box-shadow: 0 15px 30px -20px rgba(0, 0, 0, .5);
 }
 
 .advantages i {
 	font-size: 70px;
-	color: var (--accent-color);
+	color: var(--accent-color);
 }
 
 /*========Media==========*/
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 992px) {
+	.header-bottom .navbar .dropdown-menu-end {
+		margin-left: 0;
+		border: 0;
+	}
+	.header-bottom .navbar .nav-link {
+		padding: 1rem;
+	}
+}
+
+@media only screen and (max-width: 991px) {
 	.header-bottom .navbar .dropdown-menu {
 		padding-left: 1rem;
 	}
