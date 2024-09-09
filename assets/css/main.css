@@ -61,6 +61,8 @@ section {
 .section-title span {
 	background-color: var(--bg-color);
 	padding-right: 1rem;
+	position: relative;
+	z-index: 1;
 }
 
 .section-title::after {
@@ -70,7 +72,6 @@ section {
 	top: 50%;
 	left: 0;
 	border-top: 1px dashed var(--text-color);
-	z-index: -1;
 }
 
 .btn, 
@@ -379,6 +380,15 @@ ul.social-icons a:hover {
 	font-weight: 400;
 	text-decoration: line-through;
 	font-size: 0.8rem;
+}
+
+		/*====About Us===*/
+.about-us {
+	background-color: #fff;
+}
+
+.about-us .section-title span {
+	background-color: #fff;
 }
 /*========Media==========*/
 
