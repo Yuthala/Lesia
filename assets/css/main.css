@@ -51,6 +51,7 @@ section {
 	padding: 50px 0;
 }
 
+
 .section-title {
 	position: relative;
 	text-transform: uppercase;
@@ -390,6 +391,63 @@ ul.social-icons a:hover {
 .about-us .section-title span {
 	background-color: #fff;
 }
+
+/*========Footer==========*/
+.footer {
+	background-color: var(--contrast-color);
+	padding: 50px 0;
+	color: #fff;
+}
+
+footer h4 {
+	color: var(--accent-color);
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+	transition: all .3s;
+}
+
+footer a:hover {
+	color: var(--accent-color);
+}
+
+.footer-icons {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+	padding: 0;
+	font-size: 20px;
+}
+
+/*========Arrow UP==========*/
+#toTop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: var(--accent-color);
+	opacity: .5;
+	color: #fff;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 0;
+	font-size: 25px;
+	transition: all, .3s;
+	z-index: 5;
+	display: none;
+}
+
+#toTop:hover {
+	opacity: 1;
+}
+
+#toTop.show { 
+	display: block;
+}
+
+
 /*========Media==========*/
 
 @media only screen and (min-width: 992px) {
