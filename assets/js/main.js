@@ -3,26 +3,28 @@ window.addEventListener('DOMContentLoaded', function() {
 	'use strict';
 
 
-/*переменная для scroll up*/
-let btn = document.getElementById('toTop'),
-	headerNav = document.getElementById('header-nav');
+	/*переменная для scroll up*/
+	let btn = document.getElementById('toTop'),
+		headerNav = document.getElementById('header-nav');
 
-/*переменная для offcanvas*/
-const offcanvasCartEl = document.getElementById('offcanvasCart'),
-	offcanvasCart = new bootstrap.Offcanvas(offcanvasCartEl);
+	/*переменная для offcanvas*/
+	const offcanvasCartEl = document.getElementById('offcanvasCart');
+	const offcanvasCart = new bootstrap.Offcanvas(offcanvasCartEl);
+
+	/*Event Listeners*/
 
 	/*Скрываем offcanvas после выбора пункта dropdown menu и прокручиваем страницу до выбранного пункта*/
 	document.querySelectorAll('.closecart').forEach(item => {
 		item.addEventListener('click', (e) => {
-			e.preventDefault;
+			e.preventDefault();
 			offcanvasCart.hide();
 			// let href = item.href.split('#').pop();//если в index используется href
-			let href = item.dataset.href;
+			const href = item.dataset.href;
 			offcanvasCartEl.addEventListener('hidden.bs.offcanvas', () => {
 				document.getElementById(href).scrollIntoView();
-			})
-		})
-	})
+			});
+		});
+	});
 
 	//Уменьшаем padding Navbar при скролле вниз на 135px
 	window.addEventListener('scroll', function() {
@@ -49,4 +51,4 @@ const offcanvasCartEl = document.getElementById('offcanvasCart'),
 			behavior: "smooth"
 		});
 	});
-}) 
+});
