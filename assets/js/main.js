@@ -2,15 +2,16 @@
 window.addEventListener('DOMContentLoaded', function() {
 	'use strict';
 
-
+// Переменные
 	/*переменная для scroll up*/
 	let btn = document.getElementById('toTop'),
 		headerNav = document.getElementById('header-nav');
 
-	/*переменная для offcanvas*/
+	/*переменные для offcanvas*/
 	const offcanvasCartEl = document.getElementById('offcanvasCart'),
 		offcanvasCart = new bootstrap.Offcanvas(offcanvasCartEl),
-		cartOpen = document.getElementById('cart-open');
+		cartOpen = document.getElementById('cart-open'),
+		closeCart = document.querySelectorAll('.closecart');
 
 	/*Event Listeners*/
 	/*Открываем offcanvas*/
@@ -18,7 +19,16 @@ window.addEventListener('DOMContentLoaded', function() {
 		e.preventDefault();
 		offcanvasCart.toggle();
 		
-	})
+	});
+	/*Закрываем offcanvas*/
+	closeCart.forEach(item => {
+		item.addEventListener('click', (e) => {
+			e.preventDefault;
+			offcanvasCart.hide();
+			let href = item.dataset.href;
+			document.getElementById(href).scrollIntoView();
+		});
+	});
 
 	/*Скрываем offcanvas после выбора пункта dropdown menu и прокручиваем страницу до выбранного пункта*/
 	document.querySelectorAll('.closecart').forEach(item => {
