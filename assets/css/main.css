@@ -36,6 +36,7 @@ main.main {
 a {
 	color: var(--text-color);
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 a:hover {
@@ -187,6 +188,25 @@ ul.social-icons a:hover {
 
 .cart-buttons .btn:hover {
 	border: 1px solid var(--contrast-color);
+}
+				/*===offcanvas cart===*/
+.offcanvasCart-table .product-img-td {
+	width: 70px;
+	text-align: center;
+}
+
+.offcanvasCart-table img {
+	max-width: 50px;
+}
+
+.offcanvasCart-table a {
+	text-decoration: none;
+	display: block;
+}
+
+.offcanvasCart-table a:hover {
+	text-decoration: underline;
+	color: var(--text-color);
 }
 		/*===header-bottom===*/
 .header-bottom {
