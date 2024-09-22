@@ -93,31 +93,32 @@
 					</div>
 				</div>
 			</div>
-
-				<!--offcanvas cart-->
-				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
-					<div class="offcanvas-header">
-						<h5 class="offcanvas-title" id="offcanvasCartLabel">Cart</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-					</div>
-					<div class="offcanvas-body">
-						<div>
-						Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-						</div>
-						<div class="dropdown mt-3">
-						<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-							Dropdown button
-						</button>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item closecart" href="#footer" data-href="footer">Footer</a></li>
-							<li><a class="dropdown-item closecart" href="#about" data-href="about">About</a></li>
-							<li><a class="dropdown-item closecart" href="#map" data-href="map">Map</a></li>
-						</ul>
-						</div>
-					</div>
-				</div>
 		</header>
 		<!--Header Bottom-->
+			<!--offcanvas cart-->
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasCartLabel">Cart</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<div>
+				Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+				</div>
+				<!--Дополнительные ссылки в корзине в dropdown-->
+				<div class="dropdown mt-3">
+				<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+					Dropdown button
+				</button>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item closecart" href="#footer" data-href="footer">Footer</a></li>
+					<li><a class="dropdown-item closecart" href="#about" data-href="about">About</a></li>
+					<li><a class="dropdown-item closecart" href="#map" data-href="map">Map</a></li>
+				</ul>
+				</div>
+			</div>
+		</div>
+
 		<div class="header-bottom sticky-top" id="header-nav">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-bs-theme="dark">
 				<div class="container-fluid">
@@ -187,7 +188,8 @@
 							<span class="badge rounded-pill text-bg-warning cart-badge bg-warning rounded-circle">3</span>
 						</a>
 	
-						<button class="btn p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" area-controls="offcanvasCart">
+						<!--Кнопка перехода в корзину, работает по JS 	/*Открываем offcanvas*/-->
+						<button class="btn p-1" id="cart-open" type="button" data-bs-toggle="offcanvas2" data-bs-target="#offcanvasCart" area-controls="offcanvasCart">
 							<i class="fa-solid fa-cart-shopping"></i>
 							<span class="badge rounded-pill text-bg-warning cart-badge bg-warning rounded-circle">5</span>
 						</button>

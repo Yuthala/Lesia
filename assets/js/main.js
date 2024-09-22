@@ -8,10 +8,17 @@ window.addEventListener('DOMContentLoaded', function() {
 		headerNav = document.getElementById('header-nav');
 
 	/*переменная для offcanvas*/
-	const offcanvasCartEl = document.getElementById('offcanvasCart');
-	const offcanvasCart = new bootstrap.Offcanvas(offcanvasCartEl);
+	const offcanvasCartEl = document.getElementById('offcanvasCart'),
+		offcanvasCart = new bootstrap.Offcanvas(offcanvasCartEl),
+		cartOpen = document.getElementById('cart-open');
 
 	/*Event Listeners*/
+	/*Открываем offcanvas*/
+	cartOpen.addEventListener('click', (e) => {
+		e.preventDefault();
+		offcanvasCart.toggle();
+		
+	})
 
 	/*Скрываем offcanvas после выбора пункта dropdown menu и прокручиваем страницу до выбранного пункта*/
 	document.querySelectorAll('.closecart').forEach(item => {
