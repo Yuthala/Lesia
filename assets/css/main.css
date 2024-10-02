@@ -271,7 +271,7 @@ ul.social-icons a:hover {
 	animation-name: slideIn;
 }
 
-/*========Main===========*/
+/*========Main Page===========*/
 
 		/*====Carousel===*/
 
@@ -468,6 +468,37 @@ footer a:hover {
 	display: block;
 }
 
+
+/*========Main Page===========*/
+
+.breadcrums {
+	margin: 30px 0;
+	padding: 1rem;
+	background-color: #fff;
+}
+
+.breadcrums ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.breadcrums a {
+	text-decoration: none;color: var(--contrast-color);
+	transition: all .3s;
+	margin-right: 0.5rem;
+}
+
+.breadcrums a:hover {
+	color: var(--accent-color);
+}
+
+.breadcrums a::after {
+	content: "/";
+	padding-left: 0.5rem;
+	color: var(--contrast-color);
+}
 
 /*========Media==========*/
 
