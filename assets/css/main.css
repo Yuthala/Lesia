@@ -208,6 +208,7 @@ ul.social-icons a:hover {
 	text-decoration: underline;
 	color: var(--text-color);
 }
+
 		/*===header-bottom===*/
 .header-bottom {
 	border-top: 3px solid var(--accent-color);
@@ -483,5 +484,11 @@ footer a:hover {
 @media only screen and (max-width: 991px) {
 	.header-bottom .navbar .dropdown-menu {
 		padding-left: 1rem;
+	}
+}
+
+@media only screen and (max-width: 351px) {
+	.offcanvasCart-table td:last-child {
+		width: 30px;
 	}
 }
