@@ -409,7 +409,8 @@ ul.social-icons a:hover {
 	background-color: #fff;
 }
 
-.about-us .section-title span {
+.about-us .section-title span,
+.sidebar .section-title span {
 	background-color: #fff;
 }
 
@@ -471,6 +472,8 @@ footer a:hover {
 
 /*========Main Page===========*/
 
+		/*========Breadcrumbs===========*/
+
 .breadcrums {
 	margin: 30px 0;
 	padding: 1rem;
@@ -498,6 +501,40 @@ footer a:hover {
 	content: "/";
 	padding-left: 0.5rem;
 	color: var(--contrast-color);
+}
+
+		/*========Sidebar===========*/
+.sidebar {
+	background-color: #fff;
+	padding: .5rem 1rem;
+	margin-bottom: 1rem;
+}
+
+.filter-block:not(:last-child) {
+	margin-bottom: 2rem;
+}
+
+.filter-block .form-check {
+	margin-bottom: 0.5rem;
+}
+
+.form-check-input[type="checkbox"] {
+	border-radius: 0;
+	border-color: var(--gray-color);
+}
+
+.form-check-input:focus {
+	border-color: var(--gray-color);
+	box-shadow: none;
+}
+
+.form-check-input:checked {
+	background-color: var(--accent-color);
+	border-color: var(--accent-color);
+}
+
+.filter-block .badge {
+	color: var(--text-color);
 }
 
 /*========Media==========*/
