@@ -537,6 +537,14 @@ footer a:hover {
 	color: var(--text-color);
 }
 
+.sidebar .collapse-filters-btn {
+	color: var(--contrast-color);
+}
+
+.sidebar .collapse-filters-btn i {
+	margin-right: 10px;
+}
+
 		/*========Category Content===========*/
 .page-link {
 	color: var(--contrast-color);
@@ -568,6 +576,15 @@ footer a:hover {
 @media only screen and (max-width: 991px) {
 	.header-bottom .navbar .dropdown-menu {
 		padding-left: 1rem;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.sidebar .collapse-filters {
+		display: block;
+	}
+	.sidebar .collapse-filters-btn {
+		display: none;
 	}
 }
 
