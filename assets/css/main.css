@@ -537,6 +537,22 @@ footer a:hover {
 	color: var(--text-color);
 }
 
+		/*========Category Content===========*/
+.page-link {
+	color: var(--contrast-color);
+}
+
+.page-link:hover {
+	color: #fff;
+	background-color: var(--accent-color);
+	border-color: var(--accent-color);
+}
+
+.active > .page-link, .page-link.active {
+	background-color: var(--accent-color);
+	border-color: var(--accent-color);
+}
+
 /*========Media==========*/
 
 @media only screen and (min-width: 992px) {
