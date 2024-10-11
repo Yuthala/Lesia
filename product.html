@@ -356,6 +356,7 @@
 				<div class="row mt-3">
 					<div class="col-12">
 						<div class="product-contact-details bg-white p-4">
+							<!--вкладки табов-->
 							<ul class="nav nav-tabs" id="myTab" role="tablist">
 								<li class="nav-item" role="presentation">
 								  <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description-tab-pane" type="button" role="tab" aria-controls="description-tab-pane" aria-selected="true">Description</button>
@@ -366,8 +367,9 @@
 								<li class="nav-item" role="presentation">
 								  <button class="nav-link" id="video-tab" data-bs-toggle="tab" data-bs-target="#video-tab-pane" type="button" role="tab" aria-controls="video-tab-pane" aria-selected="false">Video</button>
 								</li>
-							  </ul>
-							  <div class="tab-content" id="myTabContent">
+							</ul>
+							  <!--Контентная часть табов-->
+							<div class="tab-content" id="myTabContent">
 								<div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel" aria-labelledby="description-tab" tabindex="0">
 									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus error quam eveniet ipsa fuga aut laborum rerum! Aliquam itaque cum, fugit omnis ipsam culpa cupiditate ad ut enim, alias qui.</p>
 									<p>Tenetur rerum esse odit consectetur itaque quos amet earum, ex necessitatibus sed fuga delectus, dignissimos, numquam natus maxime deserunt non qui ullam architecto temporibus placeat magnam. Architecto ipsam rerum sapiente.</p>
@@ -376,23 +378,29 @@
 								<div class="tab-pane fade" id="features-tab-pane" role="tabpanel" aria-labelledby="features-tab" tabindex="0">
 									<table class="table">
 										<tbody>
-										  <tr>
+											<tr>
 											<th scope="row">Colors</th>
 											<td>white, black, pink</td>
-										  </tr>
-										  <tr>
+											</tr>
+											<tr>
 											<th scope="row">Sizes</th>
 											<td>S, M, L</td>
-										  </tr>
-										  <tr>
+											</tr>
+											<tr>
 											<th scope="row">Video</th>
 											<td>123</td>
-										  </tr>
+											</tr>
 										</tbody>
-									  </table>
+									</table>
 								</div>
-								<div class="tab-pane fade" id="video-tab-pane" role="tabpanel" aria-labelledby="video-tab" tabindex="0">...</div>
-							  </div>
+								<!--Адаптивное видео-->
+								<div class="tab-pane fade" id="video-tab-pane" role="tabpanel" aria-labelledby="video-tab" tabindex="0">
+									.<div class="ratio ratio-16x9">
+										<!-- <video src="assets/clothing.mp4" controls></video> -->
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/qel4uqqmooE?si=S4oq-MIUO3VXC7p0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
