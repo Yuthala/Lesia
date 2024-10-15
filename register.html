@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Lesia :: Product</title>
+	<title>Lesia :: Sign Up</title>
 
 	<!--Font-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -240,294 +240,72 @@
 
 		<main class="main">
 			<!--Breadcrumbs-->
-			<div class="container-fluid">
+			<div class="container-fluid mb-3">
 				<div class="row">
 					<div class="col-12">
 						<nav class="breadcrums">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li><a href="category.html">Category</a></li>
-								<li><span>Product Name</span></li>
+								<li><span>Sign Up</span></li>
 							</ul>
 						</nav>
 					</div>
 				</div>
 			</div>
 
-			<!--Блок информации о товаре-->
+			<!--Контентная часть-->
 			<div class="container-fluid">						
-				<!--Карусель с фото товара, фото желательно от 800х800px-->
 				<div class="row">
-					<div class="col-md-5 col-lg-4 mb-3">
-						<div class="bg-white h-100">
-							<div id="carouselExampleFade" class="carousel carousel-dark slide carousel-fade">
-								<div class="carousel-inner">
-								  <div class="carousel-item active">
-									<img src="assets/img/products/1.jpg" class="d-block w-100" alt="...">
-								  </div>
-								  <div class="carousel-item">
-									<img src="assets/img/products/2.jpg" class="d-block w-100" alt="...">
-								  </div>
-								  <div class="carousel-item">
-									<img src="assets/img/products/3.jpg" class="d-block w-100" alt="...">
-								  </div>
-								  <div class="carousel-item">
-									<img src="assets/img/products/4.jpg" class="d-block w-100" alt="...">
-								  </div>
-								  <div class="carousel-item">
-									<img src="assets/img/products/5.jpg" class="d-block w-100" alt="...">
-								  </div>
-								</div>
-								<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-								  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								  <span class="visually-hidden">Previous</span>
-								</button>
-								<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-								  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-								  <span class="visually-hidden">Next</span>
-								</button>
-							  </div>
-						</div>
-					</div>
-				<!--Описание товара-->
-					<div class="col-md-7 col-lg-8 mb-3">
-						<div class="product-content bg-white p-3 h-100">
-							<h1 class="section-title h3"><span>Product name</span></h1>
-							<div class="product-price">
-								<small>$70</small>
-								$65
-							</div>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe velit quis rerum modi eligendi quae veritatis molestias culpa perferendis labore magni eius, dolor ex similique?</p>
-						
-							<!--Кнопка выбора количества и добавления в корзину-->
-							<div class="product-add2cart">
-								<div class="input-group">
-									<input type="number" class="form-control" value="1" min="1">
-									<button class="btn btn-warning"><i class="fas fa-shopping-cart"></i> Add to cart</button>
-								</div>
-							</div>
-
-							<!--Блок из трех карточек под товаром>-->
-							<div class="row mt-3">
-								<div class="col-lg-4 mb-2">
-									<div class="card h-100">
-										<div class="card-body">
-											<h5 class="card-title"><i class="fa-solid fa-shield-halved"></i> Гарантия</h5>
-											<ul class="list-unstyled">
-												<li>Гарантия 1 год</li>
-												<li>Возврат товара в течение 14 дней</li>
-												<li>Гарантия качества</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-lg-4 mb-2">
-									<div class="card h-100">
-										<div class="card-body">
-											<h5 class="card-title"><i class="fa-solid fa-truck-fast"></i> Доставка</h5>
-											<ul class="list-unstyled">
-												<li>Доставка по всей стране</li>
-												<li>Доставка почтой</li>
-												<li>Самовывоз</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-lg-4 mb-2">
-									<div class="card h-100">
-										<div class="card-body">
-											<h5 class="card-title"><i class="fa-regular fa-credit-card"></i> Оплата</h5>
-											<ul class="list-unstyled">
-												<li>Наличный расчет</li>
-												<li>Безналичный расчет</li>
-												<li>VISA/Master Card</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!--Tabs-->
-				<div class="row mt-3">
 					<div class="col-12">
-						<div class="product-contact-details bg-white p-4">
-							<!--вкладки табов-->
-							<ul class="nav nav-tabs" id="myTab" role="tablist">
-								<li class="nav-item" role="presentation">
-								  <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description-tab-pane" type="button" role="tab" aria-controls="description-tab-pane" aria-selected="true">Description</button>
-								</li>
-								<li class="nav-item" role="presentation">
-								  <button class="nav-link" id="features-tab" data-bs-toggle="tab" data-bs-target="#features-tab-pane" type="button" role="tab" aria-controls="features-tab-pane" aria-selected="false">Features</button>
-								</li>
-								<li class="nav-item" role="presentation">
-								  <button class="nav-link" id="video-tab" data-bs-toggle="tab" data-bs-target="#video-tab-pane" type="button" role="tab" aria-controls="video-tab-pane" aria-selected="false">Video</button>
-								</li>
-							</ul>
-							  <!--Контентная часть табов-->
-							<div class="tab-content" id="myTabContent">
-								<div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel" aria-labelledby="description-tab" tabindex="0">
-									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus error quam eveniet ipsa fuga aut laborum rerum! Aliquam itaque cum, fugit omnis ipsam culpa cupiditate ad ut enim, alias qui.</p>
-									<p>Tenetur rerum esse odit consectetur itaque quos amet earum, ex necessitatibus sed fuga delectus, dignissimos, numquam natus maxime deserunt non qui ullam architecto temporibus placeat magnam. Architecto ipsam rerum sapiente.</p>
-									<p>Aliquid tenetur repudiandae beatae asperiores et repellendus dignissimos a numquam, accusamus reiciendis pariatur explicabo aut labore iure molestiae. Ut perferendis veritatis quae quia modi odio quas deserunt, mollitia asperiores alias.</p>
-								</div>
-								<div class="tab-pane fade" id="features-tab-pane" role="tabpanel" aria-labelledby="features-tab" tabindex="0">
-									<table class="table">
-										<tbody>
-											<tr>
-											<th scope="row">Colors</th>
-											<td>white, black, pink</td>
-											</tr>
-											<tr>
-											<th scope="row">Sizes</th>
-											<td>S, M, L</td>
-											</tr>
-											<tr>
-											<th scope="row">Video</th>
-											<td>123</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<!--Адаптивное видео-->
-								<div class="tab-pane fade" id="video-tab-pane" role="tabpanel" aria-labelledby="video-tab" tabindex="0">
-									.<div class="ratio ratio-16x9">
-										<!-- <video src="assets/clothing.mp4" controls></video> -->
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/qel4uqqmooE?si=S4oq-MIUO3VXC7p0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-									</div>
+						<div class="page-register bg-white p-3">
+							<h1 class="section-title h3"><span>Registration</span></h1>
+							<div class="row">
+								<div class="col-md-6 offset-md-3">
+									<!--Форма регистрации-->
+									<form action="" class="needs-validation" novalidate>
+										<div class="mb-3">
+											<label for="name" class="form-label required">Name</label>
+											<input type="text" class="form-control" id="name" placeholder="Your Name" required>
+											<div class="invalid-feedback">
+												Name is mandatory
+											</div>
+										</div>
+
+										<div class="mb-3">
+											<label for="email" class="form-label required">Email</label>
+											<input type="email" class="form-control" id="email" placeholder="Your E-mail" required>
+											<div class="invalid-feedback">
+												E-mail is mandatory
+											</div>
+										</div>
+
+										<div class="mb-3">
+											<label for="phone" class="form-label required">Phone</label>
+											<input type="tel" class="form-control" id="phone" placeholder="Your Phone Number" required>
+											<div class="invalid-feedback">
+												Phone is mandatory
+											</div>
+										</div>
+
+
+										<div class="mb-3">
+											<label for="password" class="form-label required">Password</label>
+											<input type="password" class="form-control" id="password" placeholder="Password" required>
+											<div class="invalid-feedback">
+												Password is mandatory
+											</div>
+										</div>
+
+										<div class="mb-3">
+											<button type="submit" class="btn btn-warning">Sign Up</button>
+										</div>
+									</form>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-			<!--Featured products-->
-			<section class="featured-products px-lg-3">
-				<div class="container-fluid">
-					<div class="row mb-5">
-						<div class="col-12">
-							<h2 class="section-title"><span>Рекомендуемые товары</span></h2>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-						<div class="product-card">
-							<div class="product-card-offer">
-								<div class="offer-hit">Hit</div>
-								<div class="offer-new">New</div>
-							</div>
-							<div class="product-thumb">
-								<a href="product.html">
-									<img src="assets/img/products/1.jpg" alt="1">
-								</a>
-							</div>
-							<div class="product-details">
-								<h4>
-									<a href="product.html">Product 1 Lorem ipsum dolor sit amet, consectetur adipisicing.</a>
-								</h4>
-								<p class="product-excert">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, repellendus!</p>
-								<div class="product-bottom-details d-flex justify-content-between">
-									<div class="product-price">
-										<small>$70</small>
-										$65
-									</div>
-									<div class="product-links">
-										<a href="#" class="btn btn-outline-secondary add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-						<div class="product-card">
-							<div class="product-card-offer">
-								<div class="offer-hit">Hit</div>
-							</div>
-							<div class="product-thumb">
-								<a href="product.html">
-									<img src="assets/img/products/2.jpg" alt="1">
-								</a>
-							</div>
-							<div class="product-details">
-								<h4>
-									<a href="product.html">Product 2 Lorem ipsum </a>
-								</h4>
-								<p class="product-excert">Lorem ipsum dolor sit, amet consectetur adipisicing</p>
-								<div class="product-bottom-details d-flex justify-content-between">
-									<div class="product-price">
-										$65
-									</div>
-									<div class="product-links">
-										<a href="#" class="btn btn-outline-secondary add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-						<div class="product-card">
-							<div class="product-card-offer">
-							</div>
-							<div class="product-thumb">
-								<a href="product.html">
-									<img src="assets/img/products/3.jpg" alt="1">
-								</a>
-							</div>
-							<div class="product-details">
-								<h4>
-									<a href="product.html">Product 3 Lorem ipsum dolor sit amet</a>
-								</h4>
-								<p class="product-excert">Lorem ipsum dolor</p>
-								<div class="product-bottom-details d-flex justify-content-between">
-									<div class="product-price">
-										$100
-									</div>
-									<div class="product-links">
-										<a href="#" class="btn btn-outline-secondary add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-						<div class="product-card">
-							<div class="product-card-offer">
-								<div class="offer-hit">Hit</div>
-							</div>
-							<div class="product-thumb">
-								<a href="product.html">
-									<img src="assets/img/products/4.jpg" alt="1">
-								</a>
-							</div>
-							<div class="product-details">
-								<h4>
-									<a href="product.html">Product 4</a>
-								</h4>
-								<p class="product-excert">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-								<div class="product-bottom-details d-flex justify-content-between">
-									<div class="product-price">
-										<small>$70</small>
-										$65
-									</div>
-									<div class="product-links">
-										<a href="#" class="btn btn-outline-secondary add-to-cart"><i class="fas fa-shopping-cart"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 		</main>
 
 		<!--==========FOOTER==============-->

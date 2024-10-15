@@ -92,6 +92,12 @@ section {
 	color: var(--gray-color);
 }
 
+label.required::before {
+	content: "* ";
+	color: #dc3545;
+	font-weight: bold;
+}
+
 .btn-warning {
 	background-color: var(--accent-color);
 	color: var(--contrast-color);
@@ -411,7 +417,7 @@ ul.social-icons a:hover {
 
 .about-us .section-title span,
 .sidebar .section-title span,
-.product-content .section-title span{
+.bg-white .section-title span {
 	background-color: #fff;
 }
 
@@ -622,6 +628,13 @@ footer a:hover {
 		display: none;
 	}
 }
+
+/* @media only screen and (max-width: 500px) {
+	.product-content-details .nav-tabs .nav-link {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+} */
 
 @media only screen and (max-width: 351px) {
 	.offcanvasCart-table td:last-child {
