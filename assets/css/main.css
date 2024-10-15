@@ -603,9 +603,6 @@ footer a:hover {
 	padding-top: 20px;
 }
 
-.cart-qty {
-	width: 70px;
-}
 /*========Cart Page===========*/
 .cart-content table img{
 	max-width: 50px;
@@ -622,6 +619,27 @@ footer a:hover {
 .cart-content-title {
 	text-decoration: none;
 	display: block;
+}
+
+.cart-qty {
+	width: 70px;
+}
+
+.btn-coupon {
+	color: var(--text-color);
+	text-decoration: none;
+}
+
+.btn-coupon:hover {
+	color: var(--contrast-color);
+}
+
+.cart-summary h3 {
+	color: #000;
+}
+
+.cart-summary btn {
+	padding: 1rem;
 }
 /*========Media==========*/
 
