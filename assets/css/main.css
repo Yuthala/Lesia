@@ -602,6 +602,27 @@ footer a:hover {
 .tab-content {
 	padding-top: 20px;
 }
+
+.cart-qty {
+	width: 70px;
+}
+/*========Cart Page===========*/
+.cart-content table img{
+	max-width: 50px;
+}
+
+.cart-content table th {
+	text-align: center;
+}
+
+.cart-content table td {
+	padding: 1rem;
+}
+
+.cart-content-title {
+	text-decoration: none;
+	display: block;
+}
 /*========Media==========*/
 
 @media only screen and (min-width: 992px) {
