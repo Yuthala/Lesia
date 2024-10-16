@@ -43,6 +43,10 @@ a:hover {
 	text-decoration: none;
 }
 
+textarea {
+	resize: none;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
