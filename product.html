@@ -293,6 +293,16 @@
 					<div class="col-md-7 col-lg-8 mb-3">
 						<div class="product-content bg-white p-3 h-100">
 							<h1 class="section-title h3"><span>Product name</span></h1>
+							<!--рейтинг товара-->
+							<div class="product-rating">
+								<i class="fa-solid fa-star active"></i>
+								<i class="fa-solid fa-star active"></i>
+								<i class="fa-solid fa-star active"></i>
+								<i class="fa-solid fa-star active"></i>
+								<i class="fa-solid fa-star"></i>
+								<span class="count-reviews">10 Reviews</span>
+							</div>
+
 							<div class="product-price">
 								<small>$70</small>
 								$65
@@ -361,20 +371,28 @@
 								<li class="nav-item" role="presentation">
 								  <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description-tab-pane" type="button" role="tab" aria-controls="description-tab-pane" aria-selected="true">Description</button>
 								</li>
+
 								<li class="nav-item" role="presentation">
 								  <button class="nav-link" id="features-tab" data-bs-toggle="tab" data-bs-target="#features-tab-pane" type="button" role="tab" aria-controls="features-tab-pane" aria-selected="false">Features</button>
 								</li>
+
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="features-tab" data-bs-toggle="tab" data-bs-target="#reviews-tab-pane" type="button" role="tab" aria-controls="reviews-tab-pane" aria-selected="false">Reviews(10)</button>
+								</li>
+
 								<li class="nav-item" role="presentation">
 								  <button class="nav-link" id="video-tab" data-bs-toggle="tab" data-bs-target="#video-tab-pane" type="button" role="tab" aria-controls="video-tab-pane" aria-selected="false">Video</button>
 								</li>
 							</ul>
 							  <!--Контентная часть табов-->
 							<div class="tab-content" id="myTabContent">
+								<!--Описание товара-->
 								<div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel" aria-labelledby="description-tab" tabindex="0">
 									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus error quam eveniet ipsa fuga aut laborum rerum! Aliquam itaque cum, fugit omnis ipsam culpa cupiditate ad ut enim, alias qui.</p>
 									<p>Tenetur rerum esse odit consectetur itaque quos amet earum, ex necessitatibus sed fuga delectus, dignissimos, numquam natus maxime deserunt non qui ullam architecto temporibus placeat magnam. Architecto ipsam rerum sapiente.</p>
 									<p>Aliquid tenetur repudiandae beatae asperiores et repellendus dignissimos a numquam, accusamus reiciendis pariatur explicabo aut labore iure molestiae. Ut perferendis veritatis quae quia modi odio quas deserunt, mollitia asperiores alias.</p>
 								</div>
+								<!--Доступные цвета/размеры-->
 								<div class="tab-pane fade" id="features-tab-pane" role="tabpanel" aria-labelledby="features-tab" tabindex="0">
 									<table class="table">
 										<tbody>
@@ -393,9 +411,134 @@
 										</tbody>
 									</table>
 								</div>
-								<!--Адаптивное видео-->
+								<!--Отзывы о товаре-->
+								<div class="tab-pane fade" id="reviews-tab-pane" role="tabpanel" aria-labelledby="review-tab" tabindex="0">
+
+									<!-- кнопка открытия модального окна Add review -->
+								<button type="button" class="btn btn-warning mb-3" data-bs-toggle="modal" data-bs-target="#reviewModal">
+									Add review
+								</button>
+								
+									<!-- модальное окно для добавления отзыва -->
+								<div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered modal-lg">
+									<div class="modal-content">
+										<div class="modal-header">
+										<h1 class="modal-title fs-5" id="exampleModalLabel">Add review</h1>
+										<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<!--Форма нового отзыва-->
+										<form action="">
+											<div class="modal-body">
+												<div class="mb-3">
+													<label for="exampleFormControlInput1" class="form-label">Email address</label>
+													<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+												</div>
+												<div class="mb-3">
+													<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+													<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+												</div>
+
+											<div class="mb-3">
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="rate" id="rate1" value="1" required>
+													<label class="form-check-label" for="rate1">Awful</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="rate" id="rate2" value="2" required>
+													<label class="form-check-label" for="rate2">Bad</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="rate" id="rate3" value="3" required>
+													<label class="form-check-label" for="rate3">Average</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="rate" id="rate4" value="4" required>
+													<label class="form-check-label" for="rate4">Nice</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="radio" name="rate" id="rate5" value="5" required>
+													<label class="form-check-label" for="rate5">Great</label>
+												</div>
+											</div>
+
+											</div>
+												<div class="modal-footer">
+												<button type="submit" class="btn btn-warning">Submit review</button>
+											</div>
+										</form>
+									</div>
+									</div>
+								</div>
+									
+									<div class="card product-review mb-3">
+										<div class="card-body">
+										<div class="prodcut-review-header">
+											<h5 class="card-title">John Doe</h5>
+											<span class="review-date">27.02.2024</span>
+										</div>
+
+										<div class="product-rating">
+											<i class="fa-solid fa-star active"></i>
+											<i class="fa-solid fa-star active"></i>
+											<i class="fa-solid fa-star active"></i>
+											<i class="fa-solid fa-star active"></i>
+											<i class="fa-solid fa-star active"></i>
+										</div>
+
+											<div class="card-text">
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero, numquam, corporis dolor nulla ullam repellendus delectus quod sint quae eum libero, minima tempora fugit magnam placeat saepe consequuntur voluptas!</p>
+												<p>Provident dolore incidunt nisi quibusdam facere, cum dignissimos error a, repellat, consequuntur aliquid! Vero dolor id autem culpa dolores! Sed ducimus dignissimos dicta, in inventore dolor. Veritatis, repellat! Quaerat, deserunt?</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="card product-review mb-3">
+										<div class="card-body">
+										<div class="prodcut-review-header">
+											<h5 class="card-title">Vivienne Show</h5>
+											<span class="review-date">14.04.2024</span>
+										</div>
+
+										<div class="product-rating">
+											<i class="fa-solid fa-star active"></i>
+											<i class="fa-solid fa-star active"></i>
+											<i class="fa-solid fa-star active"></i>
+											<i class="fa-solid fa-star active"></i>
+											<i class="fa-solid fa-star active"></i>
+										</div>
+
+											<div class="card-text">
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero, numquam, corporis dolor nulla ullam repellendus delectus quod sint quae eum libero, minima tempora fugit magnam placeat saepe consequuntur voluptas!</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="card product-review mb-3">
+										<div class="card-body">
+										<div class="prodcut-review-header">
+											<h5 class="card-title">Alice Smith</h5>
+											<span class="review-date">04.03.2024</span>
+										</div>
+
+										<div class="product-rating">
+											<i class="fa-solid fa-star active"></i>
+											<i class="fa-solid fa-star active"></i>
+											<i class="fa-solid fa-star active"></i>
+											<i class="fa-solid fa-star active"></i>
+											<i class="fa-solid fa-star"></i>
+										</div>
+
+											<div class="card-text">
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vero, numquam, corporis dolor nulla ullam repellendus delectus quod sint quae eum libero, minima tempora fugit magnam placeat saepe consequuntur voluptas!</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!--Адаптивное видео о товаре-->
 								<div class="tab-pane fade" id="video-tab-pane" role="tabpanel" aria-labelledby="video-tab" tabindex="0">
-									.<div class="ratio ratio-16x9">
+									<div class="ratio ratio-16x9">
 										<!-- <video src="assets/clothing.mp4" controls></video> -->
 										<iframe width="560" height="315" src="https://www.youtube.com/embed/qel4uqqmooE?si=S4oq-MIUO3VXC7p0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 									</div>

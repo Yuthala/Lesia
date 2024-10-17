@@ -283,7 +283,7 @@ ul.social-icons a:hover {
 	animation-name: slideIn;
 }
 
-/*========Main Page===========*/
+/*========Index Page===========*/
 
 		/*====Carousel===*/
 
@@ -416,6 +416,27 @@ ul.social-icons a:hover {
 	font-size: 0.8rem;
 }
 
+.product-rating i {
+	color: #ccc;
+}
+
+.product-rating .active {
+	color: var(--accent-color);
+}
+
+.product-rating .count-reviews {
+	margin-left: 10px;
+}
+
+.prodcut-review-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.prodcut-review-header .review-date {
+	color: var(--gray-color);
+}
+
 		/*====About Us===*/
 .about-us {
 	background-color: #fff;
@@ -483,7 +504,7 @@ footer a:hover {
 }
 
 
-/*========Main Page===========*/
+/*========Category Page===========*/
 
 		/*========Breadcrumbs===========*/
 
